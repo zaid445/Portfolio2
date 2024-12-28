@@ -1,0 +1,527 @@
+
+
+/*education*/
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.timeline {
+    position: relative;
+    width: 2px;
+    background-color: Aqua;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.timeline-item {
+    position: relative;
+    width: 300px;
+    margin: 20px 0;
+    padding-left: 50px;
+}
+/*1*/
+.timeline-date {
+    position: absolute;
+    top: 11px;
+    left: -60px;
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+}
+.timeline-content {
+    background-color: #1f1f1f;
+    border: 2px solid Aqua;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px Aqua;
+    position: relative;
+    top:35px;
+    left:-350px
+    
+}
+.timeline-content h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.timeline-content p {
+    font-size: 14px;
+}
+
+.timeline-content:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--main-color);
+}
+/*2*/
+.timeline-dat {
+    position: absolute;
+    top: 11px;
+    left: 10px;
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+}
+
+.timeline-content2 {
+    background-color: #1f1f1f;
+    border: 2px solid Aqua;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px Aqua;
+    position: relative;
+    top:50px;
+    
+}
+
+
+.timeline-content2 h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.timeline-content2 p {
+    font-size: 14px;
+}
+.timeline-content2:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color:Aqua;
+    border-radius: 50%;
+    left: -7px;
+    top: 16px;
+    box-shadow: 0 0 10px Aqua, 0 0 20px Aqua;
+}
+
+/*scroll*/
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--bg-color);
+    width:50px ;
+}
+/*skills*/
+.skills-section {
+    padding: 50px;
+  }
+.me{
+    font-size: 20px;
+    font-weight: 600;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 100px;
+
+}
+  .skills-header {
+    margin-bottom: 30px;
+  }
+
+  .skill-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .skill {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+  }
+
+  .skill svg {
+    transform: rotate(-90deg);
+  }
+
+  .skill circle {
+    fill: none;
+    stroke-width: 10;
+  }
+
+  .skill circle.background {
+    stroke: #333;
+  }
+
+  .skill circle.progress {
+    stroke: Aqua;
+    stroke-linecap: round;
+    stroke-dasharray: 440; 
+    stroke-dashoffset: 440; 
+    animation: progress-animation 2s ease-out forwards;
+  }
+
+  @keyframes progress-animation {
+    to {
+      stroke-dashoffset: calc(440 - (440 * var(--percentage)) / 100);
+    }
+  }
+
+  .skill span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .skill-title {
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+  #logo2:hover{
+color:aqua;
+cursor: pointer;
+  }
+  
+/*service*/
+
+.control ul li{
+    list-style: none;
+    background-color: #212227;
+    padding: 5px 15px;
+    color: #BDD4E7 ;
+    display: inline-block;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-weight: 700;
+}
+.control ul li:hover{
+    transform: scale(1.09);
+
+}
+.item{
+    position:relative;
+}
+.item:hover{
+box-shadow: 0px 0px 20px 5px white;
+    transition: 0.5s;
+}
+
+/*contact*/
+.contact{
+    background-color: var(--bg-color);
+}
+.contact h2{
+    margin-bottom: 3rem;
+    color:white
+
+}
+.contact form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:3rem;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact form .input-box input,
+.contact form textarea{
+      width: 100%;
+      padding: 2.5rem;
+      font-size: 1.8rem;
+      color:var(--text-color);
+      background: var(--bg-color);
+      border-radius: 2rem;
+      border: 2px solid var(--main-color);
+      margin: 1.5rem 0;
+      resize: none;
+
+}
+
+.contact form .btn{
+    margin-top: 2rem;
+}
+
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: var(--second-bg-color);
+}
+
+.footer .social a{
+    font-size: 25px;
+    color:var(--main-color);
+    border: 2px solid var(--main-color);
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    left: 40%;
+    top:-7px;
+
+}
+
+.footer .social a:hover{
+    transform: scale(1.2)translateY(-10px);
+    background-color: var(--main-color);
+    color: black;
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+
+
+}
+.footer ul li a{
+    color:white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease-in-out;
+}
+.footer ul li a:hover{
+    border-bottom: 3px solid var(--main-color);
+}
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+
+
+
+
+/*preloader*/
+
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0a0a0a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .loader-icon {
+    font-size: 5rem;
+    font-weight: bold;
+    color: Aqua; 
+    animation: pulse 1s infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 0.7;
+    }
+  }
+
+
+/*project*/
+
+  .carousel-inner{
+    width: 50px;
+    height: 400px;
+ }
+
+ .active1{
+    position: absolute;
+    top: 330px;
+    left: 490px;
+    list-style: none;
+    text-decoration: none;
+    color:black;
+    border: 2px solid Aqua;
+    width: 150px;
+    border-radius: 40px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: fantasy;
+    background-color: Aqua;
+
+ }
+
+ .d-blockw-100{
+    width: 500px;
+    border: 6px solid Aqua;
+    box-shadow: 0 0 20px Aqua;
+
+    
+ }
+
+ .parg{
+    position: absolute;
+    top: 300px;
+    left: 480px;
+    color: white;
+    font-family: fantasy;
+    font-size: 20px;
+ }
+
+ .parg1{
+    position: absolute;
+    top: 300px;
+    left: 515px;
+    color: white;
+    font-family: fantasy;
+    font-size: 20px;
+ }
+
+
+ .active2{
+    position: absolute;
+    top: 330px;
+    left: 490px;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    border: 2px solid Aqua;
+    width: 150px;
+    border-radius: 40px;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: fantasy;
+    background-color: Aqua;
+
+ }
+ .active3{
+    position: absolute;
+    top: 330px;
+    left: 490px;
+    list-style: none;
+    text-decoration: none;
+    color:black;
+    border: 2px solid Aqua;
+    width: 150px;
+    border-radius: 40px;
+    font-size: 15px;
+    font-family: fantasy;
+    background-color: Aqua;
+    font-weight: 400;
+
+ }
+ .active4{
+    position: absolute;
+    top: 330px;
+    left:490px;
+    list-style: none;
+    text-decoration: none;
+    color:black;
+    border: 2px solid Aqua;
+    width: 150px;
+    border-radius: 40px;
+    font-size: 15px;
+    font-family: fantasy;
+    background-color: Aqua;
+    font-weight: 400;
+
+ }
+ .active5{
+    position: absolute;
+    top: 330px;
+    left: 490px;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    border: 2px solid Aqua;
+    width: 150px;
+    border-radius: 40px;
+    font-size: 15px;
+    font-family: fantasy;
+    background-color: Aqua;
+    font-weight: 400;
+
+ }
+ .active6{
+    position: absolute;
+    top: 330px;
+    left: 490px;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    border: 2px solid Aqua;
+    width: 150px;
+    border-radius: 40px;
+    font-size: 15px;
+    font-family: fantasy;
+    background-color: Aqua;
+    font-weight: 400;
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+

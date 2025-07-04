@@ -122,6 +122,7 @@ h1 {
 /*skills*/
 .skills-section {
     padding: 50px;
+    margin-bottom: 100px;
   }
 .me{
     font-size: 20px;
@@ -378,7 +379,27 @@ box-shadow: 0px 0px 20px 5px white;
     background-color: Aqua;
 
  }
-
+.active1:hover{
+  transform: scale(1)translateY(-2px);
+}
+.active2:hover{
+  transform: scale(1)translateY(-2px);
+}
+.active3:hover{
+  transform: scale(1)translateY(-2px);
+}
+.active4:hover{
+  transform: scale(1)translateY(-2px);
+}
+.active5:hover{
+  transform: scale(1)translateY(-2px);
+}
+.active6:hover{
+  transform: scale(1)translateY(-2px);
+}
+.active7:hover{
+  transform: scale(1)translateY(-2px);
+}
  .d-blockw-100{
     width: 500px;
     border: 6px solid Aqua;
@@ -471,6 +492,23 @@ box-shadow: 0px 0px 20px 5px white;
 
  }
  .active6{
+    position: absolute;
+    top: 330px;
+    left: 490px;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    border: 2px solid Aqua;
+    width: 150px;
+    border-radius: 40px;
+    font-size: 15px;
+    font-family: fantasy;
+    background-color: Aqua;
+    font-weight: 400;
+
+ }
+
+.active7{
     position: absolute;
     top: 330px;
     left: 490px;
